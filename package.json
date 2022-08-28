@@ -1,0 +1,23 @@
+{
+  "name": "oidc",
+  "version": "1.0.0",
+  "description": "extract actions oidc token",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChristopherHX/oidc.git"
+  },
+  "author": "ChristopherHX",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ChristopherHX/oidc/issues"
+  },
+  "homepage": "https://github.com/ChristopherHX/oidc#readme",
+  "dependencies": {
+    "@actions/core": "^1.9.1",
+    "jsonwebtoken": "^8.5.1"
+  }
+}
