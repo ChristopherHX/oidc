@@ -10,12 +10,12 @@ const jwt = require("jsonwebtoken");
         if(decoded.payload.job_workflow_ref) {
             var nameAndRef = decoded.payload.job_workflow_ref.split("@", 2);
             if(nameAndRef.length === 2) {
-                var nameAndPath = nameAndRef[0].split("/", 3);
-                if(nameAndPath.length === 3) {
+                var nameAndPath = nameAndRef[0].split("/");
+                if(nameAndPath.length >= 3) {
                     core.setOutput("job_workflow_repo_owner", nameAndPath[0]);
                     core.setOutput("job_workflow_repo_name", nameAndPath[1]);
                     core.setOutput("job_workflow_repo_name_and_owner", nameAndPath[0] + "/" + nameAndPath[1]);
-                    core.setOutput("job_workflow_repo_path", nameAndPath[2]);
+                    core.setOutput("job_workflow_repo_path", nameAndPath.splice(2).join("/"));
                 }
                 core.setOutput("job_workflow_repo_ref", nameAndRef[1]);
             }
