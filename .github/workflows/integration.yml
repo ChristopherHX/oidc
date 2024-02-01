@@ -1,0 +1,9 @@
+name: Integration tests
+on:
+  pull_request:
+    branches:
+      - main
+jobs:
+  integration-tests:
+    uses: ./.github/workflows/reusable-workflow.yml
+    secrets: inherit
