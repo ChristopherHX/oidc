@@ -18,6 +18,6 @@
   "homepage": "https://github.com/ChristopherHX/oidc#readme",
   "dependencies": {
     "@actions/core": "^1.10.0",
-    "jsonwebtoken": "^8.5.1"
+    "jsonwebtoken": "^9.0.2"
   }
 }
