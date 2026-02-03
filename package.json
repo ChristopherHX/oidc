@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/ChristopherHX/oidc#readme",
   "dependencies": {
-    "@actions/core": "^1.11.1",
+    "@actions/core": "^3.0.0",
     "jsonwebtoken": "^9.0.2"
   }
 }
